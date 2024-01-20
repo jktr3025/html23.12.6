@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/c_4.css">
+    <script src="script/jquery-3.7.1.js"></script>
+    <script lang="java">
+        $(function(){
+            $(".menu > li").mouseover(function(){
+                // $(this).children(".sub").show()
+                $(this).children(".sub").stop.slideDown();
+            })//  mouseover
+            $(".menu > li").mouseleave(function(){
+                // $(this).children(".sub").hide
+                $(this).children(".sub").stop.slideUp();
+            })//  mouseleave 
+        });// java close
+    </script>
+</head>
+<body>
+    <div id="wrap">
+
+        <div class="left">
+            <h1 class="logo">
+                <a href="#">LOGO</a>
+            </h1>
+            <nav class="nav">
+                <ul class="menu">
+                    <li>
+                        <a href="#">축제소개</a>
+                        <ul class="sub">
+                            <li><a href="#">Festival 소개</a></li>
+                            <li><a href="#">행사장 안내</a></li>
+                            <li><a href="#">조직위원회</a></li>
+                        </ul><!-- sub -->
+                    </li>
+                    <li>
+                        <a href="#">예약안내</a>
+                        <ul class="sub">
+                            <li><a href="#">예약하기</a></li>
+                            <li><a href="#">예약확인/취소</a></li>
+                            <li><a href="#">단체예약문의</a></li>
+                        </ul><!-- sub -->
+                    </li>
+                    <li>
+                        <a href="#">아티스트</a>
+                        <ul class="sub">
+                            <li><a href="#">고릴라즈</a></li>
+                            <li><a href="#">메이저 레이저</a></li>
+                            <li><a href="#">아우스게인</a></li>
+                            <li><a href="#">타임로드</a></li>
+                        </ul><!-- sub -->
+                    </li>
+                    <li>
+                        <a href="#">커뮤니티</a>
+                        <ul class="sub">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">사진갤러리</a></li>
+                            <li><a href="#">영상갤러리</a></li>
+                        </ul><!-- sub -->
+                    </li>
+                </ul><!-- menu -->
+            </nav><!-- nav -->
+        </div><!-- left -->
+        <div class="right">
+            <div class="r_top">이미지슬라이드</div>
+            <div class="r_middle">
+                <div class="notice">공지사항</div>
+                <div class="gallery">갤러리</div>
+                <div class="go">바로가기</div>
+            </div><!-- r_middle -->
+            <div class="r_down">
+                <div class="r_logo">로고</div>
+                <div class="r_copy">COPYRIGHT</div>
+                <div class="r_family">패밀리사이트</div>
+            </div><!-- r_down -->
+        </div><!-- right -->
+
+    </div><!-- wrap -->
+</body>
+</html>
